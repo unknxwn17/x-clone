@@ -1,5 +1,5 @@
 import express from "express";
-import { protectRoute } from "../middleware/ProtectRoute.js";
+import { protectRoute } from "../middleware/protectRoute.js";
 import { commentOnPost, createPost, deletePost, getAllPosts, getFollowingPosts, getLikedPosts, getUserPosts, likeUnlikePost } from "../controllers/post.controller.js";
 
 
