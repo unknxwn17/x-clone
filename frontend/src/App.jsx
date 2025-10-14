@@ -15,7 +15,7 @@ import LoadingSpinner from './components/common/LoadingSpinner';
 function App() {
   const { data:authUser, isLoading } = useQuery({
     //We use queryKey to give a unique name to our query and refer to it later
-    queryKey: ['authUser'],
+    queryKey: ["authUser"],
     queryFn: async() => {
       try {
         const res = await fetch("/api/auth/me");
@@ -24,7 +24,7 @@ function App() {
         if(!res.ok){
           throw new Error(data.error || "Something went wrong");
         }
-        console.log("authUser is here:",data)
+        console.log("authUser is here:",data) 
         return data;
 
       } catch (error) {
